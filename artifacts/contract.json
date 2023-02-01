@@ -1,0 +1,42 @@
+{
+    "name": "MyApp",
+    "methods": [
+        {
+            "name": "signup",
+            "args": [
+                {
+                    "type": "address",
+                    "name": "affiliate"
+                },
+                {
+                    "type": "address",
+                    "name": "linkCreator"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "affiliate_transaction",
+            "args": [
+                {
+                    "type": "pay",
+                    "name": "payment"
+                },
+                {
+                    "type": "address",
+                    "name": "affiliate"
+                },
+                {
+                    "type": "uint64",
+                    "name": "platformIndex"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        }
+    ],
+    "networks": {}
+}

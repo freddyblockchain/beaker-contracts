@@ -1,0 +1,59 @@
+{
+    "hints": {},
+    "source": {
+        "approval": "I3ByYWdtYSB2ZXJzaW9uIDgKaW50Y2Jsb2NrIDEgMCAxMDAwMDAwCmJ5dGVjYmxvY2sgMHg2MyAweDYxCnR4biBOdW1BcHBBcmdzCmludGNfMSAvLyAwCj09CmJueiBtYWluX2w2CnR4bmEgQXBwbGljYXRpb25BcmdzIDAKcHVzaGJ5dGVzIDB4ZGViOTJhODUgLy8gInNpZ251cChhZGRyZXNzLGFkZHJlc3MpdWludDY0Igo9PQpibnogbWFpbl9sNQp0eG5hIEFwcGxpY2F0aW9uQXJncyAwCnB1c2hieXRlcyAweDYxZTU1ODYzIC8vICJhZmZpbGlhdGVfdHJhbnNhY3Rpb24ocGF5LGFkZHJlc3MsdWludDY0KXZvaWQiCj09CmJueiBtYWluX2w0CmVycgptYWluX2w0Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMSAvLyBOb09wCj09CnR4biBBcHBsaWNhdGlvbklECmludGNfMSAvLyAwCiE9CiYmCmFzc2VydAp0eG5hIEFwcGxpY2F0aW9uQXJncyAxCnN0b3JlIDQKdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgpidG9pCnN0b3JlIDUKdHhuIEdyb3VwSW5kZXgKaW50Y18wIC8vIDEKLQpzdG9yZSAzCmxvYWQgMwpndHhucyBUeXBlRW51bQppbnRjXzAgLy8gcGF5Cj09CmFzc2VydApsb2FkIDMKbG9hZCA0CmxvYWQgNQpjYWxsc3ViIGFmZmlsaWF0ZXRyYW5zYWN0aW9uXzIKaW50Y18wIC8vIDEKcmV0dXJuCm1haW5fbDU6CnR4biBPbkNvbXBsZXRpb24KaW50Y18xIC8vIE5vT3AKPT0KdHhuIEFwcGxpY2F0aW9uSUQKaW50Y18xIC8vIDAKIT0KJiYKYXNzZXJ0CnR4bmEgQXBwbGljYXRpb25BcmdzIDEKc3RvcmUgMAp0eG5hIEFwcGxpY2F0aW9uQXJncyAyCnN0b3JlIDEKbG9hZCAwCmxvYWQgMQpjYWxsc3ViIHNpZ251cF8xCnN0b3JlIDIKcHVzaGJ5dGVzIDB4MTUxZjdjNzUgLy8gMHgxNTFmN2M3NQpsb2FkIDIKaXRvYgpjb25jYXQKbG9nCmludGNfMCAvLyAxCnJldHVybgptYWluX2w2Ogp0eG4gT25Db21wbGV0aW9uCmludGNfMSAvLyBOb09wCj09CmJueiBtYWluX2w4CmVycgptYWluX2w4Ogp0eG4gQXBwbGljYXRpb25JRAppbnRjXzEgLy8gMAo9PQphc3NlcnQKY2FsbHN1YiBjcmVhdGVfMAppbnRjXzAgLy8gMQpyZXR1cm4KCi8vIGNyZWF0ZQpjcmVhdGVfMDoKcHJvdG8gMCAwCmludGNfMCAvLyAxCnJldHVybgoKLy8gc2lnbnVwCnNpZ251cF8xOgpwcm90byAyIDEKaW50Y18xIC8vIDAKZnJhbWVfZGlnIC0yCmJveF9nZXQKc3RvcmUgNwpzdG9yZSA2CmxvYWQgNwppbnRjXzEgLy8gMAo9PQphc3NlcnQKZnJhbWVfZGlnIC0yCmZyYW1lX2RpZyAtMQpib3hfcHV0CmZyYW1lX2RpZyAtMQpieXRlY18wIC8vICJjIgpjb25jYXQKYm94X2dldApzdG9yZSA5CnN0b3JlIDgKZnJhbWVfZGlnIC0xCmJ5dGVjXzAgLy8gImMiCmNvbmNhdApsb2FkIDkKaW50Y18xIC8vIDAKPT0KYm56IHNpZ251cF8xX2wyCmxvYWQgOApidG9pCmludGNfMCAvLyAxCisKaXRvYgpiIHNpZ251cF8xX2wzCnNpZ251cF8xX2wyOgppbnRjXzAgLy8gMQppdG9iCnNpZ251cF8xX2wzOgpib3hfcHV0CmludGNfMCAvLyAxCmZyYW1lX2J1cnkgMApyZXRzdWIKCi8vIGFmZmlsaWF0ZV90cmFuc2FjdGlvbgphZmZpbGlhdGV0cmFuc2FjdGlvbl8yOgpwcm90byAzIDAKZnJhbWVfZGlnIC0yCmZyYW1lX2RpZyAtMQppdG9iCmNvbmNhdApib3hfZ2V0CnN0b3JlIDExCnN0b3JlIDEwCmZyYW1lX2RpZyAtMwpndHhucyBTZW5kZXIKdHhuIFNlbmRlcgo9PQphc3NlcnQKZnJhbWVfZGlnIC0zCmd0eG5zIFJlY2VpdmVyCmdsb2JhbCBDdXJyZW50QXBwbGljYXRpb25BZGRyZXNzCj09CmFzc2VydApsb2FkIDExCmludGNfMCAvLyAxCj09CmFzc2VydAppdHhuX2JlZ2luCmludGNfMCAvLyBwYXkKaXR4bl9maWVsZCBUeXBlRW51bQpnbG9iYWwgQ3VycmVudEFwcGxpY2F0aW9uQWRkcmVzcwppdHhuX2ZpZWxkIFNlbmRlcgppbnRjXzIgLy8gMTAwMDAwMAppdHhuX2ZpZWxkIEFtb3VudApnbG9iYWwgQ3JlYXRvckFkZHJlc3MKaXR4bl9maWVsZCBSZWNlaXZlcgppdHhuX25leHQKaW50Y18wIC8vIHBheQppdHhuX2ZpZWxkIFR5cGVFbnVtCmdsb2JhbCBDdXJyZW50QXBwbGljYXRpb25BZGRyZXNzCml0eG5fZmllbGQgU2VuZGVyCmZyYW1lX2RpZyAtMwpndHhucyBBbW91bnQKaW50Y18yIC8vIDEwMDAwMDAKLQppdHhuX2ZpZWxkIEFtb3VudApsb2FkIDEwCmV4dHJhY3QgMCAzMgppdHhuX2ZpZWxkIFJlY2VpdmVyCml0eG5fc3VibWl0CmZyYW1lX2RpZyAtMgpmcmFtZV9kaWcgLTEKaXRvYgpjb25jYXQKYnl0ZWNfMSAvLyAiYSIKY29uY2F0CmJveF9nZXQKc3RvcmUgMTMKc3RvcmUgMTIKZnJhbWVfZGlnIC0yCmZyYW1lX2RpZyAtMQppdG9iCmNvbmNhdApieXRlY18xIC8vICJhIgpjb25jYXQKbG9hZCAxMwppbnRjXzEgLy8gMAo9PQpibnogYWZmaWxpYXRldHJhbnNhY3Rpb25fMl9sMgpsb2FkIDEyCmJ0b2kKZnJhbWVfZGlnIC0zCmd0eG5zIEFtb3VudAppbnRjXzIgLy8gMTAwMDAwMAotCisKaXRvYgpiIGFmZmlsaWF0ZXRyYW5zYWN0aW9uXzJfbDMKYWZmaWxpYXRldHJhbnNhY3Rpb25fMl9sMjoKaW50Y18wIC8vIDEKaXRvYgphZmZpbGlhdGV0cmFuc2FjdGlvbl8yX2wzOgpib3hfcHV0CnJldHN1Yg==",
+        "clear": "I3ByYWdtYSB2ZXJzaW9uIDgKcHVzaGludCAwIC8vIDAKcmV0dXJu"
+    },
+    "schema": {
+        "local": {
+            "declared": {},
+            "reserved": {}
+        },
+        "global": {
+            "declared": {},
+            "reserved": {}
+        }
+    },
+    "contract": {
+        "name": "MyApp",
+        "methods": [
+            {
+                "name": "signup",
+                "args": [
+                    {
+                        "type": "address",
+                        "name": "affiliate"
+                    },
+                    {
+                        "type": "address",
+                        "name": "linkCreator"
+                    }
+                ],
+                "returns": {
+                    "type": "uint64"
+                }
+            },
+            {
+                "name": "affiliate_transaction",
+                "args": [
+                    {
+                        "type": "pay",
+                        "name": "payment"
+                    },
+                    {
+                        "type": "address",
+                        "name": "affiliate"
+                    },
+                    {
+                        "type": "uint64",
+                        "name": "platformIndex"
+                    }
+                ],
+                "returns": {
+                    "type": "void"
+                }
+            }
+        ],
+        "networks": {}
+    }
+}

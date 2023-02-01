@@ -1,0 +1,214 @@
+#pragma version 8
+intcblock 1 0 1000000
+bytecblock 0x63 0x61
+txn NumAppArgs
+intc_1 // 0
+==
+bnz main_l6
+txna ApplicationArgs 0
+pushbytes 0xdeb92a85 // "signup(address,address)uint64"
+==
+bnz main_l5
+txna ApplicationArgs 0
+pushbytes 0x61e55863 // "affiliate_transaction(pay,address,uint64)void"
+==
+bnz main_l4
+err
+main_l4:
+txn OnCompletion
+intc_1 // NoOp
+==
+txn ApplicationID
+intc_1 // 0
+!=
+&&
+assert
+txna ApplicationArgs 1
+store 4
+txna ApplicationArgs 2
+btoi
+store 5
+txn GroupIndex
+intc_0 // 1
+-
+store 3
+load 3
+gtxns TypeEnum
+intc_0 // pay
+==
+assert
+load 3
+load 4
+load 5
+callsub affiliatetransaction_2
+intc_0 // 1
+return
+main_l5:
+txn OnCompletion
+intc_1 // NoOp
+==
+txn ApplicationID
+intc_1 // 0
+!=
+&&
+assert
+txna ApplicationArgs 1
+store 0
+txna ApplicationArgs 2
+store 1
+load 0
+load 1
+callsub signup_1
+store 2
+pushbytes 0x151f7c75 // 0x151f7c75
+load 2
+itob
+concat
+log
+intc_0 // 1
+return
+main_l6:
+txn OnCompletion
+intc_1 // NoOp
+==
+bnz main_l8
+err
+main_l8:
+txn ApplicationID
+intc_1 // 0
+==
+assert
+callsub create_0
+intc_0 // 1
+return
+
+// create
+create_0:
+proto 0 0
+intc_0 // 1
+return
+
+// signup
+signup_1:
+proto 2 1
+intc_1 // 0
+frame_dig -2
+box_get
+store 7
+store 6
+load 7
+intc_1 // 0
+==
+assert
+frame_dig -2
+frame_dig -1
+box_put
+frame_dig -1
+bytec_0 // "c"
+concat
+box_get
+store 9
+store 8
+frame_dig -1
+bytec_0 // "c"
+concat
+load 9
+intc_1 // 0
+==
+bnz signup_1_l2
+load 8
+btoi
+intc_0 // 1
++
+itob
+b signup_1_l3
+signup_1_l2:
+intc_0 // 1
+itob
+signup_1_l3:
+box_put
+intc_0 // 1
+frame_bury 0
+retsub
+
+// affiliate_transaction
+affiliatetransaction_2:
+proto 3 0
+frame_dig -2
+frame_dig -1
+itob
+concat
+box_get
+store 11
+store 10
+frame_dig -3
+gtxns Sender
+txn Sender
+==
+assert
+frame_dig -3
+gtxns Receiver
+global CurrentApplicationAddress
+==
+assert
+load 11
+intc_0 // 1
+==
+assert
+itxn_begin
+intc_0 // pay
+itxn_field TypeEnum
+global CurrentApplicationAddress
+itxn_field Sender
+intc_2 // 1000000
+itxn_field Amount
+global CreatorAddress
+itxn_field Receiver
+itxn_next
+intc_0 // pay
+itxn_field TypeEnum
+global CurrentApplicationAddress
+itxn_field Sender
+frame_dig -3
+gtxns Amount
+intc_2 // 1000000
+-
+itxn_field Amount
+load 10
+extract 0 32
+itxn_field Receiver
+itxn_submit
+frame_dig -2
+frame_dig -1
+itob
+concat
+bytec_1 // "a"
+concat
+box_get
+store 13
+store 12
+frame_dig -2
+frame_dig -1
+itob
+concat
+bytec_1 // "a"
+concat
+load 13
+intc_1 // 0
+==
+bnz affiliatetransaction_2_l2
+load 12
+btoi
+frame_dig -3
+gtxns Amount
+intc_2 // 1000000
+-
++
+itob
+b affiliatetransaction_2_l3
+affiliatetransaction_2_l2:
+intc_0 // 1
+itob
+affiliatetransaction_2_l3:
+box_put
+retsub
